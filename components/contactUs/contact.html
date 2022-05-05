@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THINK ABOUT OTHERS</title>
-    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/components/contactUs/contact.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
@@ -14,39 +14,55 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
     />
-  </head>
-  <body>
     <div class="topnav">
       <a class="active" href="#home">Home</a>
       <a href="#news">News</a>
-      <a href="./components/contactUs/contact.html">Contact</a>
-      <a href="./components/about/about.html">About</a>
+      <a href="/components/contactUs/contact.html">Contact</a>
+      <a href="/components/about/about.html">About</a>
     </div>
     <div class="hero-image"></div>
     <div class="caption center">
       When we give cheerfully and accept gratefully, everyone is blessed
     </div>
-    <div class="box">
-      <div class="bo served">
-        <b>Served Over</b>
-        <h2><b>12,000</b></h2>
-      </div>
-      <div class="bo donate">
-        <h2><b> Donate Money</b></h2>
-        <p>It's not how much we give,but how much love we put into giving.</p>
-        <button class="donates">Donate Us</button>
-      </div>
-      <div class="bo volunteer">
-        <h2><b>Be a Volunteer</b></h2>
-        <p>
-          The best way to find yourself is to lose yourself in the service of
-          others
-        </p>
-        <button class="joinus">Be A Volunteer</button>
-      </div>
+  </head>
+  <body>
+    <div class="container">
+      <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="India">India</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
     </div>
-    <!-- footer -->
-    <div class="footer-dark" id="#about">
+    <div class="footer-dark">
       <footer>
         <div class="container">
           <div class="row">
@@ -85,9 +101,8 @@
           <p class="copyright">Abhilasha © 2022</p>
         </div>
       </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>
